@@ -1,9 +1,10 @@
 const { app, BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');   
 const path = require('path');
+
+require('electron-reload')("./frontend-study-timer/src");
  
 let mainWindow;
- 
 function createWindow() {
     mainWindow = new BrowserWindow({
         width:900,
